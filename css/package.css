@@ -33,14 +33,58 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.package__place.big {
+/* package__place.big */
+.package__place {
   display: flex;
   margin: 0px 15px 30px 15px;
 }
-.package__place.big .package__place-photo {
+.package__place.middle {
+  flex-direction: column;
+}
+.package__place.middle .package__place-photo {
+  width: 350px;
+  height: 250px;
+}
+.package__place.middle .package__place-photo .package__place-img {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+.package__place.middle .package__place-photo .package__place-offer {
+  width: 60px;
+  height: 18px;
+  border-radius: 0px 4px 4px 0px;
+}
+.package__place.middle .package__place-photo .package__place-offer .package__place-offer-text {
+  font-size: 8px;
+  line-height: 10px;
+  top: 4px;
+  left: 9px;
+}
+.package__place.middle .package__place-info {
+  width: 350px;
+  height: 250px;
+  border-radius: 0px 0px 8px 8px;
+}
+.package__place.middle .package__place-info .package__place-title {
+  margin-top: 30px;
+  margin-left: 32px;
+}
+.package__place.middle .package__place-info .package__place-opportunities {
+  margin-top: 23px;
+  margin-left: 32px;
+}
+.package__place.middle .package__place-info .package__place-price {
+  margin-top: 24px;
+  margin-left: 32px;
+}
+.package__place.middle .package__place-info .package__place-button {
+  bottom: 25px;
+}
+.package__place .package__place-photo {
   position: relative;
 }
-.package__place.big .package__place-photo .package__place-offer {
+.package__place .package__place-photo .package__place-offer {
   position: absolute;
   top: 26px;
   left: 0px;
@@ -49,7 +93,7 @@
   background: #EC1F46;
   border-radius: 0px 4px 4px 0px;
 }
-.package__place.big .package__place-photo .package__place-offer .package__place-offer-text {
+.package__place .package__place-photo .package__place-offer .package__place-offer-text {
   position: absolute;
   top: 8px;
   left: 11px;
@@ -58,72 +102,72 @@
   line-height: 15px;
   color: #fff;
 }
-.package__place.big .package__place-info {
+.package__place .package__place-info {
   background: #0A223D;
   position: relative;
 }
-.package__place.big .package__place-info .package__place-stars {
+.package__place .package__place-info .package__place-stars {
   display: flex;
   align-items: center;
   margin-left: 43px;
   margin-top: 46px;
 }
-.package__place.big .package__place-info .package__place-stars .package__place-star {
+.package__place .package__place-info .package__place-stars .package__place-star {
   width: 8px;
   height: 8px;
   margin-right: 2px;
 }
-.package__place.big .package__place-info .package__place-title {
+.package__place .package__place-info .package__place-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: #fff;
   margin-top: 5px;
 }
-.package__place.big .package__place-info .package__place-text-info {
+.package__place .package__place-info .package__place-text-info {
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
   color: #fff;
   margin-top: 27px;
 }
-.package__place.big .package__place-info .package__place-opportunities {
+.package__place .package__place-info .package__place-opportunities {
   margin-top: 45px;
 }
-.package__place.big .package__place-info .package__place-opportunities .package__place-opportunity {
+.package__place .package__place-info .package__place-opportunities .package__place-opportunity {
   display: flex;
   align-items: center;
   margin-bottom: 11px;
 }
-.package__place.big .package__place-info .package__place-opportunities .package__place-opportunity .package__place-opportunity-text {
+.package__place .package__place-info .package__place-opportunities .package__place-opportunity .package__place-opportunity-text {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #fff;
 }
-.package__place.big .package__place-info .package__place-opportunities .package__place-opportunity .package__place-opportunity-img {
+.package__place .package__place-info .package__place-opportunities .package__place-opportunity .package__place-opportunity-img {
   width: 14px;
   height: 14px;
   margin-right: 14px;
 }
-.package__place.big .package__place-info .package__place-price {
+.package__place .package__place-info .package__place-price {
   margin-top: 37px;
 }
-.package__place.big .package__place-info .package__place-price .package__place-discount {
+.package__place .package__place-info .package__place-price .package__place-discount {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-decoration-line: line-through;
   color: #fff;
 }
-.package__place.big .package__place-info .package__place-price .package__place-total {
+.package__place .package__place-info .package__place-price .package__place-total {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #fff;
   margin-top: 5px;
 }
-.package__place.big .package__place-info .package__place-button {
+.package__place .package__place-info .package__place-button {
   bottom: 30px;
   right: 21px;
   width: 120px;
@@ -135,100 +179,105 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.package__place.big .package__place-info .package__place-button:hover {
+.package__place .package__place-info .package__place-button:hover {
   box-shadow: 0px 0px 25px #EC1F46;
 }
 @media all and (min-width: 759px) {
-  .package__place.big {
+  .package__place {
     align-items: flex-start;
   }
-  .package__place.big .package__place-photo {
+  .package__place .package__place-photo {
     width: 366px;
     height: 500px;
   }
-  .package__place.big .package__place-photo .package__place-img {
+  .package__place .package__place-photo .package__place-img {
     width: 366px;
     height: 500px;
     border-radius: 8px 0px 0px 8px;
   }
-  .package__place.big .package__place-info {
+  .package__place .package__place-info {
     width: 364px;
     height: 500px;
     border-radius: 0px 8px 8px 0px;
   }
-  .package__place.big .package__place-info .package__place-title {
+  .package__place .package__place-info .package__place-title {
     margin-left: 43px;
   }
-  .package__place.big .package__place-info .package__place-text-info {
+  .package__place .package__place-info .package__place-text-info {
     margin-left: 44px;
     width: 299px;
   }
-  .package__place.big .package__place-info .package__place-opportunities {
+  .package__place .package__place-info .package__place-opportunities {
     margin-left: 46px;
   }
-  .package__place.big .package__place-info .package__place-price {
+  .package__place .package__place-info .package__place-price {
     margin-left: 46px;
   }
 }
 @media all and (max-width: 760px) {
-  .package__place.big {
+  .package__place {
     flex-direction: column;
   }
-  .package__place.big .package__place-photo {
+  .package__place .package__place-photo {
     width: 350px;
     height: 500px;
   }
-  .package__place.big .package__place-photo .package__place-img {
+  .package__place .package__place-photo .package__place-img {
     width: 350px;
     height: 500px;
     border-radius: 8px 8px 0px 0px;
   }
-  .package__place.big .package__place-info {
+  .package__place .package__place-info {
     width: 350px;
     height: auto;
     border-radius: 0px 0px 8px 8px;
   }
-  .package__place.big .package__place-info .package__place-stars {
+  .package__place .package__place-info .package__place-stars {
     margin-left: 15px;
   }
-  .package__place.big .package__place-info .package__place-title {
+  .package__place .package__place-info .package__place-title {
     margin-left: 15px;
   }
-  .package__place.big .package__place-info .package__place-text-info {
+  .package__place .package__place-info .package__place-text-info {
     margin-left: 15px;
     margin-right: 15px;
     width: auto;
   }
-  .package__place.big .package__place-info .package__place-opportunities {
+  .package__place .package__place-info .package__place-opportunities {
     margin-left: 15px;
   }
-  .package__place.big .package__place-info .package__place-price {
+  .package__place .package__place-info .package__place-price {
     margin-left: 15px;
     margin-bottom: 46px;
   }
 }
 @media all and (min-width: 360px) {
-  .package__place.big .package__place-info .package__place-button {
+  .package__place .package__place-info .package__place-button {
     position: absolute;
   }
 }
 @media all and (max-width: 360px) {
-  .package__place.big .package__place-photo {
+  .package__place .package__place-photo,
+  .package__place.middle .package__place-photo {
     width: 100%;
     height: 100%;
   }
-  .package__place.big .package__place-photo .package__place-img {
+  .package__place .package__place-photo .package__place-img,
+  .package__place.middle .package__place-photo .package__place-img {
     width: 100%;
     height: 100%;
   }
-  .package__place.big .package__place-info {
+  .package__place .package__place-info,
+  .package__place.middle .package__place-info {
     width: 100%;
     height: 100%;
   }
-  .package__place.big .package__place-info .package__place-price {
+  .package__place .package__place-info .package__place-price,
+  .package__place.middle .package__place-info .package__place-price {
     margin-bottom: 20px;
   }
-  .package__place.big .package__place-info .package__place-button {
+  .package__place .package__place-info .package__place-button,
+  .package__place.middle .package__place-info .package__place-button {
     margin-left: 15px;
     margin-bottom: 46px;
   }

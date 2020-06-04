@@ -42,9 +42,63 @@
   flex-wrap: wrap;
 }
 
-.package__place.big {
+/* package__place.big */
+.package__place {
   display: flex;
   margin: 0px 15px 30px 15px;
+
+  &.middle {
+    flex-direction: column;
+
+    .package__place-photo {
+      width: 350px;
+      height: 250px;
+
+      .package__place-img {
+        width: 350px;
+        height: 250px;
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .package__place-offer {
+        width: 60px;
+        height: 18px;
+        border-radius: 0px 4px 4px 0px;
+
+        .package__place-offer-text {
+          font-size: 8px;
+          line-height: 10px;
+          top: 4px;
+          left: 9px;
+        }
+      }
+    }
+
+    .package__place-info {
+      width: 350px;
+      height: 250px;
+      border-radius: 0px 0px 8px 8px;
+
+      .package__place-title {
+        margin-top: 30px;
+        margin-left: 32px;
+      }
+
+      .package__place-opportunities {
+        margin-top: 23px;
+        margin-left: 32px;
+      }
+
+      .package__place-price {
+        margin-top: 24px;
+        margin-left: 32px;
+      }
+
+      .package__place-button {
+        bottom: 25px;
+      }
+    }
+  }
 
   .package__place-photo {
     position: relative;
@@ -166,7 +220,7 @@
 }
 
 @media all and (min-width: 759px) {
-  .package__place.big {
+  .package__place {
     align-items: flex-start;
 
     .package__place-photo {
@@ -206,7 +260,7 @@
 }
 
 @media all and (max-width: 760px) {
-  .package__place.big {
+  .package__place {
     flex-direction: column;
 
     .package__place-photo {
@@ -252,7 +306,7 @@
 }
 
 @media all and (min-width: 360px) {
-  .package__place.big {
+  .package__place {
     .package__place-info {
       .package__place-button {
         position: absolute;
@@ -262,7 +316,7 @@
 }
 
 @media all and (max-width: 360px) {
-  .package__place.big {
+  .package__place, .package__place.middle {
     .package__place-photo {
       width: 100%;
       height: 100%;
