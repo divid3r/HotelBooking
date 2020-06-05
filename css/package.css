@@ -169,6 +169,7 @@
   margin-top: 5px;
 }
 .package__place .package__place-info .package__place-button {
+  font-family: 'Nunito';
   bottom: 30px;
   right: 21px;
   width: 120px;
