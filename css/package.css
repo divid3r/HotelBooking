@@ -252,7 +252,7 @@
     margin-bottom: 46px;
   }
 }
-@media all and (min-width: 360px) {
+@media all and (min-width: 359px) {
   .package__place .package__place-info .package__place-button {
     position: absolute;
   }
